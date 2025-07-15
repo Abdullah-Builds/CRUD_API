@@ -1,4 +1,4 @@
-# PI API Project
+# CRUD API Project
 
 This is a backend REST API built using **Node.js**, **Express**, and **MongoDB**.
 
