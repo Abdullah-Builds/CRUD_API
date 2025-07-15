@@ -1,0 +1,75 @@
+// let users = [
+//     {
+//     "firstname" : "John",
+//     "lastName" : "Doe",
+//     "age" : 25
+//     }
+// ]
+
+
+
+// //all routes are starting with /users
+// router.get('/',(req,res)=>{
+   
+//     res.send(users)
+   
+// })
+
+// router.post('/',(req,res)=>{
+
+//     const userId = uuidv4();
+
+//     const userWithId = {...req.body,id:userId}
+
+//     users.push(userWithId)
+
+//     res.send("POST ROUTE REACH")
+// })
+
+// router.get('/:id',(req,res)=>{
+
+//     const {id} = req.params;
+
+//     const found = users.find((users)=>users.id == id)
+
+//     res.send(found);
+// })
+
+
+
+// router.delete('/:id', (req, res) => {
+
+//   const { id } = req.params;
+
+//   const userExists = users.some(user => user.id === id);
+
+//   if (!userExists) {
+//     return res.status(404).send(`User with ID ${id} not found`);
+//   }
+
+//   //reassign to users array
+//   users = users.filter(user => user.id !== id);
+
+//   res.send(`User with ID ${id} deleted`);
+// });
+
+
+// router.patch('/:id' , (req,res)=>{
+
+//     const {id} = req.params
+//     const{firstName, lastName, age} = req.body
+//     let user = users.find((user)=>user.id == id)
+
+//     if(firstName) user.firstName = firstName
+//     if(lastName) user.lastName = lastName
+//     if(age)  user.age = age
+
+//     res.send(`User with ${id} has been Updated`)
+    
+// })
+
+
+//export default router;
+
+
+//mongodb+srv://Nodedb:<db_password>@nodeapi.rt2vhe6.mongodb.net/?retryWrites=true&w=majority&appName=NodeAPI
